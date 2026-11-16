@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamesh E – AI & Backend Engineer</title>
+<meta name="description" content="AI & Backend Engineer building Python, FastAPI and LLM systems for enterprise FX trading platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#hero">Kamesh E</a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#stack">Stack</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1>I build backends that trades can rely on, and AI that explains them.</h1>
+    <p>AI &amp; Backend Engineer at TCS, 2.5+ years. I worked on Calypso and Quicksilver trading platforms, and build AI tools around them.</p>
+    <p class="hint">Follow a trade through its life.</p>
+  </div>
+
+  <div class="ticket" aria-live="polite">
+    <div class="ticket-head">
+      <span>FX Spot trade</span>
+      <span id="status-pill" class="pill">Booked</span>
+    </div>
+    <ol class="stages" id="stages">
+      <li><button data-i="0" class="on">Booked</button></li>
+      <li><button data-i="1">Validated</button></li>
+      <li><button data-i="2">Confirmed</button></li>
+      <li><button data-i="3">Settled</button></li>
+    </ol>
+    <div class="bar"><span id="bar"></span></div>
+    <h2 id="stage-title">Booked</h2>
+    <p id="stage-text"></p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="sec">Projects Highlights</h2>
+  <article class="proj">
+    <h3>AI Incident Analyzer</h3>
+    <p>Finds application errors and matches them to past incidents. A LangGraph agent calls tools, retrieves runbooks with RAG, and proposes fixes. A human approves each fix before a simulated run.</p>
+    <p class="tags">LangChain, LangGraph, pgvector, PostgreSQL</p>
+    <a href="#" data-link="github-incident">Source on GitHub</a>
+  </article>
+  <article class="proj">
+    <h3>AI Resume Analyzer</h3>
+    <p>Extracts text from PDFs, chunks it, embeds it with Sentence Transformers and answers questions through vector similarity search.</p>
+    <p class="tags">Python, LLMs, pgvector, Sentence Transformers</p>
+    <a href="#" data-link="github-resume">Source on GitHub</a>
+  </article>
+  <article class="proj">
+    <h3>Food Ordering and Delivery Backend</h3>
+    <p>REST API with JWT auth and role-based access for customers and restaurant owners. RabbitMQ handles order events and notifications; Redis caches hot reads.</p>
+    <p class="tags">FastAPI, PostgreSQL, SQLAlchemy, RabbitMQ, Redis</p>
+    <a href="#" data-link="github-food">Source on GitHub</a>
+  </article>
+  <article class="proj">
+    <h3>Job Portal Backend</h3>
+    <p>Django REST API for authentication, job postings and applications, with validation, pagination and role-based access.</p>
+    <p class="tags">Django, Django REST Framework, Django ORM</p>
+    <a href="#" data-link="github-job">Source on GitHub</a>
+  </article>
+  <article class="proj">
+    <h3>Calypso EOD Monitoring Automation</h3>
+    <p>Automated end-of-day checks in Calypso with alerting and validation, cutting manual monitoring effort.</p>
+    <p class="tags">Python, Calypso, Power Automate</p>
+  </article>
+</section>
+
+<section id="stack">
+  <h2 class="sec">Tech Stack</h2>
+  <dl class="stack">
+    <dt>Languages</dt><dd>Python, SQL</dd>
+    <dt>Backend</dt><dd>Django, FastAPI, REST APIs, RabbitMQ, Redis</dd>
+    <dt>AI</dt><dd>LLM applications, RAG, embeddings, semantic search, AI agents, prompt engineering, LangChain, LangGraph, LangSmith, PyTorch</dd>
+    <dt>Data</dt><dd>MySQL, Oracle SQL, PostgreSQL with pgvector</dd>
+    <dt>Tools</dt><dd>Git, Linux, AWS, Splunk, Power BI, Power Automate</dd>
+    <dt>Domain</dt><dd>FX trading, trade lifecycle, financial markets</dd>
+  </dl>
+</section>
+
+<section id="experience">
+  <h2 class="sec">Experience</h2>
+  <div class="job">
+    <div class="when">Jan 2024 – Present</div>
+    <div>
+      <h3>System Engineer, Tata Consultancy Services</h3>
+      <p>AI &amp; Backend Engineer on enterprise trading applications (Calypso and Quicksilver).</p>
+      <ul>
+        <li>Developed and supported enterprise trading applications including Calypso Trading Application and Quicksilver Trading Application for Westpac Bank.</li>
+        <li>Worked on backend development using Python, Django, and FastAPI.</li>
+        <li>Implemented automation solutions to improve operational efficiency and reduce manual intervention.</li>
+        <li>Designed and supported AI-powered solutions integrated with business applications.</li>
+        <li>Investigated, identified, and resolved production issues and application defects in live environments.</li>
+        <li>Collaborated with business users, support teams, and developers to troubleshoot critical incidents and deliver timely solutions.</li>
+        <li>Worked extensively in troubleshooting and application support.</li>
+        <li>Supported release activities, production deployments, and post-release validation.</li>
+        <li>Gained strong domain knowledge in Foreign Exchange (FX) trading, trade lifecycle management, and financial market operations.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="sec">Education</h2>
+  <div class="job">
+    <div class="when">2019 – 2023</div>
+    <div>
+      <h3>B.E. Electronics and Communication, Easwari Engineering College</h3>
+      <p>CGPA 8.9 / 10</p>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <h2 class="sec">Certificates</h2>
+  <ul class="plain">
+    <li>Nasdaq Calypso Certified Technical Associate, V18 — <a href="https://www.credly.com/badges/9f308fb9-986f-4bef-8374-3215544893c0">Credential</a></li>
+    <li>Meta Backend Developer From Coursera — <a href="https://www.coursera.org/account/accomplishments/specialization/182N9EP07K33">Credential</a></li>
+    <li>Power BI Data Analyst Associate — <a href="https://learn.microsoft.com/en-us/users/kameshe-8248/credentials/d412c4066f472915">Credential</a></li>
+    <li>HackerRank Software Engineer skill test — <a href="https://www.hackerrank.com/certificates/d67217ee2e2b">Credential</a></li>
+    <li>HackerRank SQL (Advanced) Skill Test — <a href="https://www.hackerrank.com/certificates/97aff32f6a86">Credential</a></li>
+   
+  </ul>
+</section>
+
+<section id="highlights">
+  <h2 class="sec">Highlights</h2>
+  <ul class="plain">
+    <li>Achieved Wings Digital Distinction in TCS.</li>
+    <li>Participated in and completed the TCS AI Hackathon Challenge.</li>
+    <li>Received the Best Team Award in recognition of outstanding performance.</li>
+  </ul>
+</section>
+</main>
+
+<footer id="contact">
+  <h2>Let's talk.</h2>
+  <p>Open to backend and AI engineering roles.</p>
+  <p class="links">
+    <a href="mailto:kamesh.e1101@gmail.com">kamesh.e1101@gmail.com</a>
+    <a href="#" data-link="github">GitHub</a>
+    <a href="#" data-link="linkedin">LinkedIn</a>
+    <a href="#" data-link="leetcode">LeetCode</a>
+  </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
